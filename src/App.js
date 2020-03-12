@@ -3,14 +3,9 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const name = "Tony Lemons";
-    const loading = false;
-    const showName = true;
-
     return (
       <div className="App">
-        <h1>My App!</h1>
-        { loading ? <h4>Loading...</h4> : <h1>Hello {showName && name} from React!</h1> }
+        <h1>Hello</h1>
       </div>
     );
   }
