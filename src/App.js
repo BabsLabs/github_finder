@@ -5,12 +5,10 @@ class App extends Component {
   render() {
     const name = "Tony Lemons";
     const loading = true;
-    if (loading){
-      return <h4>Loading...</h4>
-    }
     return (
       <div className="App">
-        <h1>Hello {this.foo()} from React! </h1>
+        <h1>My App!</h1>
+        { loading ? <h4>Loading...</h4> : <h1>Hello {name} from React!</h1> }
       </div>
     );
   }
